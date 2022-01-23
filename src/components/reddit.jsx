@@ -19,7 +19,13 @@ function ShowReddit() {
   if (!RedditEnable) return null;
   return (
     <Container maxWidth="sm">
-      <Typography variant="overline" display="block" gutterBottom>
+      <Typography
+        variant="overline"
+        display="block"
+        sx={{ mt: 2, mb: 1 }}
+        color="text.secondary"
+        gutterBottom
+      >
         Reddit /all
       </Typography>
       <CharacterGrid items={post} />
