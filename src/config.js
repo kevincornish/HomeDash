@@ -1,3 +1,5 @@
+export const RedditEnable = true;
+export const NavEnable = true;
 export const BookmarksList = [
   {
     name: "Google",
@@ -7,14 +9,14 @@ export const BookmarksList = [
     target: "_blank",
   },
   {
-    name: "Google",
+    name: "Bookmark 2",
 
     url: "https://www.google.com/webhp",
 
     target: "_blank",
   },
   {
-    name: "Google",
+    name: "Bookmark 3",
 
     url: "https://www.google.com/webhp",
 
@@ -30,28 +32,14 @@ export const NavBar = [
     target: "_blank",
   },
   {
-    name: "Google",
+    name: "Nav 2",
 
     url: "https://www.google.com/webhp",
 
     target: "_blank",
   },
   {
-    name: "Google",
-
-    url: "https://www.google.com/webhp",
-
-    target: "_blank",
-  },
-  {
-    name: "Google",
-
-    url: "https://www.google.com/webhp",
-
-    target: "_blank",
-  },
-  {
-    name: "Google",
+    name: "Nav 3",
 
     url: "https://www.google.com/webhp",
 

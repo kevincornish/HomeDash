@@ -2,9 +2,10 @@ import { Typography, Link } from "@mui/material";
 import * as React from "react";
 import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
-import { NavBar } from "../config";
+import { NavBar, NavEnable } from "../config";
 
 function Header() {
+  if (!NavEnable) return null;
   return (
     <AppBar
       position="static"

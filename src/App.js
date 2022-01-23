@@ -4,6 +4,7 @@ import CssBaseline from "@mui/material/CssBaseline";
 import GlobalStyles from "@mui/material/GlobalStyles";
 import Header from "./components/header";
 import Bookmarks from "./components/bookmarks";
+import ShowReddit from "./components/reddit";
 import Footer from "./components/footer";
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
       />
       <CssBaseline />
       <Header />
+      <ShowReddit />
       <Bookmarks />
       <Footer />
     </React.Fragment>
