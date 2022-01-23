@@ -17,21 +17,16 @@ function Bookmarks() {
           {BookmarksList.map((data, key) => {
             return (
               <Link href={data.url} target={data.target} underline="none">
-                <Box
-                  component="span"
+                <Button
                   sx={{
-                    border: "1px dashed grey",
                     p: 2,
+                    mt: 6,
+                    mb: 3,
+                    border: "1px dashed grey",
                   }}
                 >
-                  <Button
-                    sx={{
-                      p: 2,
-                    }}
-                  >
-                    {data.name}
-                  </Button>
-                </Box>
+                  {data.name}
+                </Button>
               </Link>
             );
           })}
