@@ -23,7 +23,7 @@ function ShowReddit() {
         variant="overline"
         display="block"
         sx={{ mt: 2, mb: 1 }}
-        color="text.secondary"
+        color="white"
         gutterBottom
       >
         Reddit /all
@@ -44,9 +44,9 @@ const CharacterGrid = ({ items }) => {
         href={"https://reddit.com/" + i.data.subreddit_name_prefixed}
         target="_blank"
       >
-        {i.data.subreddit_name_prefixed})
-      </Link>{" "}
-      {i.data.over_18}
+        {i.data.subreddit_name_prefixed}
+      </Link>
+      ) {i.data.over_18}
     </List>
   ));
 };

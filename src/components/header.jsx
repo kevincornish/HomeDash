@@ -9,7 +9,7 @@ function Header() {
   return (
     <AppBar
       position="static"
-      color="default"
+      style={{ background: "#2E3B55" }}
       elevation={0}
       sx={{ borderBottom: (theme) => `1px solid ${theme.palette.divider}` }}
     >
