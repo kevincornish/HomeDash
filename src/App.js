@@ -4,6 +4,7 @@ import CssBaseline from "@mui/material/CssBaseline";
 import GlobalStyles from "@mui/material/GlobalStyles";
 import Header from "./components/header";
 import Bookmarks from "./components/bookmarks";
+import ShowGoogle from "./components/google";
 import ShowReddit from "./components/reddit";
 import Footer from "./components/footer";
 
@@ -17,6 +18,7 @@ function App() {
       />
       <CssBaseline />
       <Header />
+      <ShowGoogle />
       <ShowReddit />
       <Bookmarks />
       <Footer />
