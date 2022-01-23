@@ -2,8 +2,8 @@ import "./App.css";
 import * as React from "react";
 import CssBaseline from "@mui/material/CssBaseline";
 import GlobalStyles from "@mui/material/GlobalStyles";
-import { Container, Typography } from "@mui/material";
 import Header from "./components/header";
+import Bookmarks from "./components/bookmarks";
 import Footer from "./components/footer";
 
 function App() {
@@ -16,9 +16,7 @@ function App() {
       />
       <CssBaseline />
       <Header />
-      <Container maxWidth="sm">
-        <Typography>HomeDash</Typography>
-      </Container>
+      <Bookmarks />
       <Footer />
     </React.Fragment>
   );

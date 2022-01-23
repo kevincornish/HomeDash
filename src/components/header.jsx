@@ -2,6 +2,7 @@ import { Typography, Link } from "@mui/material";
 import * as React from "react";
 import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
+import { NavBar } from "../config";
 
 function Header() {
   return (
@@ -13,17 +14,21 @@ function Header() {
     >
       <Toolbar sx={{ flexWrap: "wrap" }}>
         <Typography variant="h6" color="inherit" noWrap sx={{ flexGrow: 1 }}>
-          Dashboard | Kevin Cornish
+          HomeDash
         </Typography>
         <nav>
-          <Link
-            variant="button"
-            color="text.primary"
-            href=""
-            sx={{ my: 1, mx: 1.5 }}
-          >
-            test
-          </Link>
+          {NavBar.map((data, key) => {
+            return (
+              <Link
+                variant="button"
+                color="text.primary"
+                href={data.url}
+                sx={{ my: 1, mx: 1.5 }}
+              >
+                {data.name}
+              </Link>
+            );
+          })}
         </nav>
       </Toolbar>
     </AppBar>
