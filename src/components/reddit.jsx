@@ -24,7 +24,6 @@ function ShowReddit() {
         variant="overline"
         display="block"
         sx={{ mt: 2, mb: 1 }}
-        color="white"
         gutterBottom
       >
         Reddit /all
