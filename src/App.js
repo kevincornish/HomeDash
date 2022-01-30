@@ -10,6 +10,7 @@ import ShowGoogle from "./components/google";
 import ShowReddit from "./components/reddit";
 import Footer from "./components/footer";
 import { Typography, Card } from "@mui/material";
+import useLocalStorage from "use-local-storage";
 
 const themeLight = createTheme({
   palette: {
@@ -36,7 +37,10 @@ const themeDark = createTheme({
 });
 
 function App() {
-  const [light, setLight] = React.useState(true);
+  const [light, setLight] = useLocalStorage(
+    "theme",
+    themeLight ? themeDark : themeLight
+  );
   const date = new Date();
   const hour = date.getHours();
   return (
