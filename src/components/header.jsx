@@ -25,6 +25,7 @@ function Header() {
                 color="text.primary"
                 href={data.url}
                 sx={{ my: 1, mx: 1.5 }}
+                key={key}
               >
                 {data.name}
               </Link>

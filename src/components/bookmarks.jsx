@@ -16,7 +16,12 @@ function Bookmarks() {
         >
           {BookmarksList.map((data, key) => {
             return (
-              <Link href={data.url} target={data.target} underline="none">
+              <Link
+                href={data.url}
+                target={data.target}
+                underline="none"
+                key={key}
+              >
                 <Button
                   sx={{
                     p: 2,
