@@ -46,7 +46,7 @@ const CharacterGrid = ({ items, isLoading }) => {
         >
           {i.data.subreddit_name_prefixed}
         </Link>
-        ) {i.data.over_18}
+        )
       </List>
     ))
   );
