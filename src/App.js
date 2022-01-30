@@ -75,7 +75,13 @@ function App() {
             {date.toLocaleDateString()}
           </Typography>
         </Card>
-        <Button onClick={() => setLight((prev) => !prev)}>Toggle Theme</Button>
+        <Button
+          onClick={() => setLight((prev) => !prev)}
+          variant="outlined"
+          color="primary"
+        >
+          Theme
+        </Button>
         {GoogleEnable ? <ShowGoogle /> : ""}
         {RedditEnable ? <ShowReddit /> : ""}
         <Bookmarks />
