@@ -2,7 +2,6 @@ import axios from "axios";
 import { List } from "@mui/material";
 import Link from "@mui/material/Link";
 import { Container, Typography } from "@mui/material";
-import { RedditEnable } from "../config";
 import React, { useState } from "react";
 import Loader from "./loader";
 
@@ -10,14 +9,12 @@ const baseURL = "http://www.reddit.com/.json?limit=5";
 function ShowReddit() {
   const [isLoading, setLoading] = useState(true);
   const [post, setPost] = React.useState(null);
-  React.useEffect((RedditEnable) => {
+  React.useEffect((ShowReddit) => {
     axios.get(baseURL).then((response) => {
       setPost(response.data.data.children);
       setLoading(false);
     });
   }, []);
-
-  if (!RedditEnable) return null;
   return (
     <Container maxWidth="sm">
       <Typography

@@ -1,6 +1,6 @@
 export const RedditEnable = true;
 export const GoogleEnable = true;
-export const NavEnable = true;
+export const NavEnable = false;
 export const FooterEnable = true;
 export const BookmarksList = [
   {

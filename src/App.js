@@ -11,6 +11,7 @@ import ShowReddit from "./components/reddit";
 import Footer from "./components/footer";
 import { Typography, Card } from "@mui/material";
 import useLocalStorage from "use-local-storage";
+import { RedditEnable, GoogleEnable, NavEnable, FooterEnable } from "./config";
 
 const themeLight = createTheme({
   palette: {
@@ -52,7 +53,7 @@ function App() {
           }}
         />
         <CssBaseline />
-        <Header />
+        {NavEnable ? <Header /> : ""}
         <Card>
           <Typography
             align="center"
@@ -75,10 +76,10 @@ function App() {
           </Typography>
         </Card>
         <Button onClick={() => setLight((prev) => !prev)}>Toggle Theme</Button>
-        <ShowGoogle />
-        <ShowReddit />
+        {GoogleEnable ? <ShowGoogle /> : ""}
+        {RedditEnable ? <ShowReddit /> : ""}
         <Bookmarks />
-        <Footer />
+        {FooterEnable ? <Footer /> : ""}
       </ThemeProvider>
     </React.Fragment>
   );
